@@ -385,6 +385,59 @@
         
     </style>
 
+    <!-- Interactive button -->
+    <style>
+        .btn-interact {
+            width: 133px;
+            height: 35px;
+            cursor: pointer;
+            border-radius: 25px;
+            background: transparent;
+            border: 2px solid #91C9FF;
+            outline: none;
+            transition: 1s ease-in-out;
+            text-decoration: none;
+            align-items: center;
+            display: flex;
+            text-align: center;
+            font-weight: 500;
+            color: black;
+        }
+    
+        .btn-interact:link {
+            color: black;
+        }
+    
+        .btn-interact:visited {
+            color: black;
+        }
+    
+        /* .btn-citation:hover {
+                    color: black;
+                } */
+        .btn-interact:active {
+            color: black;
+        }
+    
+        .btn-interact:hover {
+            transition: 0.75s ease-in-out;
+            background: #8bb2ff1e;
+            text-decoration: none;
+            font-weight: 500;
+            color: black;
+        }
+    
+        .vertical-center-interact {
+            height: 70%;
+            position: relative;
+            /* top: 0px;
+                    right: 0;
+                    float: left; */
+            padding-right: 7px;
+            padding-left: 6px;
+        }
+    </style>
+
     <style>
         .vertical-center {
             height: 80%;
@@ -495,6 +548,9 @@
                     <a href="https://anonymous.4open.science/r/brain-dissection-44BD" target="_blank" class="btn-code" role="button">
                         <img src="images/code.png" class="vertical-center-code"> Anonymous Code
                     </a>
+                    <a href="#results" class="btn-interact" role="button">
+                        <img src="images/brain-clipart-lg.png" class="vertical-center-interact"> Interactive
+                    </a>
                 </div>
 
                 <br>
@@ -510,9 +566,9 @@
                 text-align: center;
                 margin: auto;
                 } -->
-                <div>
+
+                <!-- <div>
                     <img src="images/demo_gif.gif" style="text-align: center; width: 50%; display: block; margin-left: auto; margin-right: auto; margin-bottom:0; padding: 0">
-                    <!-- <p style="text-align: center; display: block; margin : 0; padding: 0"><font size="1">(It may take a second to load)</font></p> -->
                 </div>
                 <div class="inner_demo">
                     <img src="images/normals_medians_subject1.jpg" id="absdepthdemoImg" style="width:100%">
@@ -524,7 +580,7 @@
                     <p>
                         See <a href="#anchor-name">Results</a> below for more interactive brains!
                     </p>
-                </div>
+                </div> -->
 
                 
 
@@ -545,8 +601,8 @@
                 selectivity in the human brain <a href="https://www.biorxiv.org/content/10.1101/2022.03.16.484578v2" target="_blank">(Khosla & Wehbe, 2022)</a>. We adapt this approach to create a hypothesis-neutral model that is
                 then used to explore the tuning properties of specific visual regions beyond category selectivity, which we call "brain
                 dissection".</p>
-                <br>
-                <spacer type="horizontal" width="5" height="5"> </spacer>
+                <!-- <br> -->
+                <!-- <spacer type="horizontal" width="5" height="5"> </spacer> -->
                 <br>
                 <p align="justify">We use brain dissection to examine a range of ecologically important, intermediate properties, including
                 depth, surface normals, curvature, and object relations and find consistent feature selectivity differences across
@@ -599,7 +655,7 @@
                 <hr>
 
                 <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
-                    <h2 id="anchor-name">Results</h2>
+                    <h2 id="results">Results</h2>
                 </div>
                 <div>
                     <h3>Interactive Brain Flatmaps</h3>
